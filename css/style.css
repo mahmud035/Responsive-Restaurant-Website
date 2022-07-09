@@ -349,6 +349,120 @@ header > p {
   align-items: center;
 } */
 
+/** Contact */
+.contact-section-container {
+  padding: 8rem 0;
+  height: 100vh;
+  background: url(../images/form-bg.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contact-content {
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  height: 65vh;
+}
+
+.contact-info {
+  flex: 1;
+  background: var(--bg-dark);
+  padding: 3rem;
+  text-align: center;
+  height: 100%;
+}
+
+.contact-info-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.info-1 > h3 {
+  font-size: 30px;
+  color: var(--text-white);
+  padding-bottom: 1.2rem;
+  font-weight: 500;
+}
+
+.info-1 > p {
+  font-size: 20px;
+  color: var(--text-white);
+  font-family: 'Playball', cursive;
+}
+
+.info-2 p:nth-child(1),
+.info-3 p:nth-child(1) {
+  color: var(--text-white);
+  font-size: 18px;
+  padding-bottom: 1.5rem;
+}
+
+.info-2 p:nth-child(2),
+.info-2 p:nth-child(3),
+.info-3 p:nth-child(2),
+.info-3 p:nth-child(3) {
+  color: var(--text-gray);
+  font-size: 15px;
+  padding: 0.5rem 0;
+}
+
+.hr-line {
+  background-color: var(--text-white);
+  width: 90%;
+  margin-inline: auto;
+  height: 1px;
+}
+
+.info-4 h4 {
+  font-size: 20px;
+  color: var(--text-white);
+  font-family: 'Playball', cursive;
+}
+
+.contact-form {
+  flex: 2;
+  background: var(--bg-white);
+  padding: 5rem;
+  height: 100%;
+}
+
+.contact-form h3 {
+  font-size: 30px;
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: center;
+}
+
+.contact-form p {
+  font-size: 20px;
+  font-family: 'Playball', cursive;
+  color: var(--text-primary);
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.contact-form form input[type='text'],
+.contact-form form input[type='email'],
+textarea {
+  display: block;
+  width: 100%;
+  padding: 11.25px;
+  background-color: #fafafa;
+  margin-top: 1rem;
+  border-radius: 2px;
+  border: 1px solid #eaeaea;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-form form .btn {
+  margin-top: 1rem;
+}
+
 /** Services Section   */
 .service-section-container {
   padding: 8rem 0;
@@ -373,6 +487,19 @@ header > p {
   width: 70%;
   margin-inline: auto;
   line-height: 30px;
+}
+
+/** Footer  */
+footer {
+  background-color: var(--bg-footer);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+  color: var(--text-white);
 }
 /** Media Query */
 

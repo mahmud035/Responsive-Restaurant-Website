@@ -105,9 +105,14 @@ body {
 .navbar-links ul li a {
   display: block;
   color: var(--text-gray);
-  padding: 0 16px;
+  padding: 0 20px;
   font-size: 15px;
   transition: 0.35s ease;
+}
+
+.navbar-links ul:last-child li a.btn {
+  padding: 14px 35px;
+  color: var(--text-white);
 }
 
 .navbar-links li a:hover {
@@ -132,6 +137,62 @@ body {
   border-radius: 10px;
 }
 
+/** Header */
+header {
+  height: calc(100vh - 80px);
+  background: url(../images/header-bg.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+  transition: 0.3s ease;
+  color: var(--text-white);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+header .text p {
+  font-size: 18px;
+  padding-bottom: 2rem;
+}
+
+header .text h1 {
+  font-size: 60px;
+  font-family: 'Playball', cursive;
+}
+
+header .divider {
+  width: 55px;
+  height: 4px;
+  margin-inline: auto;
+  background-color: var(--link-color);
+  margin-top: 2rem;
+}
+
+header > p {
+  font-size: 15px;
+  padding: 2rem 0;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--link-color);
+  color: var(--text-white);
+  padding: 14px 35px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--link-hover-color);
+}
+
+/** Media Query */
+
 @media (max-width: 992px) {
   /** Navigation */
   .toggle-button {
@@ -143,10 +204,13 @@ body {
     width: 100%;
   }
 
+  .navbar-links ul:last-child li a.btn {
+    display: none;
+  }
+
   .navbar {
     width: 95vw;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     align-items: flex-start;
   }
 
@@ -161,7 +225,6 @@ body {
     position: absolute;
     top: 3rem;
     left: 1rem;
-    /* transition: translateX(-45%); */
     background-color: #f9f9f9;
     height: fit-content;
   }

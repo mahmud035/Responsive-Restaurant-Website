@@ -349,6 +349,31 @@ header > p {
   align-items: center;
 } */
 
+/** Services Section   */
+.service-section-container {
+  padding: 8rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.service-item img {
+  margin-inline: auto;
+}
+
+.service-item h3 {
+  padding: 1rem 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.service-item p {
+  width: 70%;
+  margin-inline: auto;
+  line-height: 30px;
+}
 /** Media Query */
 
 @media (max-width: 992px) {

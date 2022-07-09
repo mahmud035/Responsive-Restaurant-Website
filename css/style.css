@@ -56,15 +56,16 @@ select {
   --bg-footer: #3a3a3a;
   --link-color: #e54c2a;
   --link-hover-color: #4c4c4c;
-  --menu-text-color: #e54c2a;
+  --nav-link-hover-color: #e54c2a;
   --text-primary: #4c4c4c;
   --text-white: #fff;
-  --text-form-gray: #808285;
+  --text-gray: #808285;
 }
 
 body {
   font-family: 'Playball', cursive;
   font-family: 'Ubuntu', sans-serif;
+  overflow-x: hidden;
 }
 
 /* Common CSS Classes */
@@ -72,4 +73,108 @@ body {
   max-width: 1440px;
   width: 80%;
   margin-inline: auto;
+}
+
+/** Navigation */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  height: 80px;
+}
+
+.navbar .brand-title {
+  max-width: 250px;
+  height: auto;
+  border: 0;
+  cursor: pointer;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-links ul li a {
+  display: block;
+  color: var(--text-gray);
+  padding: 0 16px;
+  font-size: 15px;
+  transition: 0.35s ease;
+}
+
+.navbar-links li a:hover {
+  color: var(--nav-link-hover-color);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: var(--link-color);
+  border-radius: 10px;
+}
+
+@media (max-width: 992px) {
+  /** Navigation */
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    width: 95vw;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1rem;
+    padding: 0.5rem 2rem 0.5rem 1rem;
+    z-index: 1000;
+    border-radius: 8px;
+    font-weight: 600;
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    /* transition: translateX(-45%); */
+    background-color: #f9f9f9;
+    height: fit-content;
+  }
+
+  .navbar-links li {
+    padding: 10px 0;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar .brand-title {
+    max-width: 150px;
+  }
 }

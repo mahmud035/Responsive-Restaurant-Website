@@ -600,6 +600,12 @@ footer {
   }
 }
 
+@media (max-width: 1130px) {
+  .service-section-container {
+    gap: 5rem;
+  }
+}
+
 @media (max-width: 992px) {
   /** Navigation */
   .toggle-button {

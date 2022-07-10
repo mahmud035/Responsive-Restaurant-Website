@@ -659,6 +659,24 @@ footer {
   .story-image {
     gap: 2rem 7rem;
   }
+
+  /** Our Specialties  */
+  .special-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .drink {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .food {
+    grid-column: 1 / -1;
+    grid-row: 2 / -1;
+  }
 }
 
 @media (max-width: 576px) {
@@ -674,5 +692,10 @@ footer {
   /** Our Story */
   .story-image {
     gap: 1.5rem;
+  }
+
+  /** Our Specialties */
+  .special-content {
+    text-align: center;
   }
 }

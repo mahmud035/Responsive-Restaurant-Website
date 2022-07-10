@@ -683,12 +683,49 @@ footer {
     grid-column: 1 / -1;
     grid-row: 2 / -1;
   }
+
+  /** Location Section */
+  .location-section {
+    padding: 8rem 0;
+  }
+
+  .location-content {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  /** Location Section */
+  .location-img {
+    flex: 2;
+  }
+  .location-info {
+    flex: 1;
+  }
 }
 
 @media (max-width: 767px) {
   .footer-content {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  /** Location Section */
+  .location-content {
+    flex-direction: column;
+  }
+
+  .location-img {
+    flex: 1;
+  }
+
+  .location-info {
+    flex: 1;
+  }
+
+  .location-info {
+    width: 100%;
+    align-items: left;
   }
 }
 
@@ -709,6 +746,11 @@ footer {
 
   /** Our Specialties */
   .special-content {
+    text-align: center;
+  }
+
+  /** Location Section */
+  .social-icon {
     text-align: center;
   }
 }

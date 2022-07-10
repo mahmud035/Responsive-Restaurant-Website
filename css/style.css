@@ -354,7 +354,7 @@ header > p {
 /** Contact */
 .contact-section-container {
   padding: 8rem 0;
-  height: 100vh;
+  min-height: 100vh;
   background: url(../images/form-bg.jpg) no-repeat;
   background-position: center center;
   background-size: cover;
@@ -365,7 +365,7 @@ header > p {
   z-index: 1000;
   display: flex;
   justify-content: center;
-  height: 65vh;
+  min-height: 65vh;
 }
 
 .contact-info {
@@ -373,7 +373,7 @@ header > p {
   background: var(--bg-dark);
   padding: 3rem;
   text-align: center;
-  height: 100%;
+  min-height: 65vh;
 }
 
 .contact-info-flex {
@@ -429,7 +429,7 @@ header > p {
   flex: 2;
   background: var(--bg-white);
   padding: 5rem;
-  height: 100%;
+  min-height: 65vh;
 }
 
 .contact-form h3 {
@@ -578,7 +578,8 @@ footer {
   padding: 2.5rem 0;
   color: var(--text-white);
 }
-/** Media Query */
+
+/** -----Media Query----- */
 
 @media (max-width: 1450px) {
   /** Our Story */
@@ -601,6 +602,7 @@ footer {
 }
 
 @media (max-width: 1130px) {
+  /** Service Section */
   .service-section-container {
     gap: 5rem;
   }
@@ -684,6 +686,16 @@ footer {
     grid-row: 2 / -1;
   }
 
+  /** Contact Section */
+  .contact-info {
+    flex: 1.5;
+  }
+
+  .contact-form {
+    flex: 2;
+    padding: 3rem;
+  }
+
   /** Location Section */
   .location-section {
     padding: 8rem 0;
@@ -705,9 +717,16 @@ footer {
 }
 
 @media (max-width: 767px) {
+  /** Footer */
   .footer-content {
     flex-direction: column;
     gap: 1.5rem;
+  }
+
+  /** Contact Section */
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
   }
 
   /** Location Section */

@@ -580,6 +580,26 @@ footer {
 }
 /** Media Query */
 
+@media (max-width: 1450px) {
+  /** Our Story */
+  .story-content p {
+    width: 100%;
+    padding: 1.5rem 0 2.5rem;
+  }
+}
+
+@media (max-width: 1265px) {
+  /** Our Story */
+  .story-section-container {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .story-image {
+    gap: 2rem 10rem;
+  }
+}
+
 @media (max-width: 992px) {
   /** Navigation */
   .toggle-button {
@@ -626,5 +646,33 @@ footer {
 
   .navbar .brand-title {
     max-width: 150px;
+  }
+
+  /** Header */
+  header > p {
+    width: 70%;
+    margin-inline: auto;
+    line-height: 30px;
+  }
+
+  /** Our Story  */
+  .story-image {
+    gap: 2rem 7rem;
+  }
+}
+
+@media (max-width: 576px) {
+  /** Header */
+  header .text p {
+    font-size: 1rem;
+  }
+
+  header .text h1 {
+    font-size: 48px;
+  }
+
+  /** Our Story */
+  .story-image {
+    gap: 1.5rem;
   }
 }

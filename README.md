@@ -1,6 +1,6 @@
 # Responsive-Restaurant-Website
 
-<h2>👉 <a href="https://mahmud035.github.io/personal-portfolio-website-html-css-javascript/index.html">Live Website</a></h2>
+<h2>👉 <a href="https://responsive-restaurant-flavors.netlify.app/">Live Website</a></h2>
 
 ## Description
 
